@@ -15,13 +15,13 @@
 
 
 def get_frequency(input_string:str) -> dict:
-    frequency = {}
     if (input_string == None):
         return(None)
     elif (len(input_string) == 0):
         return(None)
     else:
         try:
+            frequency = {}
             for character in input_string:
                 if (character != " "):
                     frequency[character] = frequency.get(character,0) + 1
